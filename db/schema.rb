@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180226182244) do
+ActiveRecord::Schema.define(version: 20180226183327) do
 
   create_table "locations", force: :cascade do |t|
     t.string "city"
-    t.string "weather"
+    t.string "address"
+    t.string "country"
   end
 
   create_table "parts", force: :cascade do |t|
